@@ -4,7 +4,7 @@ import {
   ViewContainerRef,
   ViewChild,
   Component,
-ViewRef
+  ViewRef
 } from "@angular/core";
 import { ChildComponent } from "../child/child.component";
 
@@ -18,8 +18,8 @@ export class ParentComponent {
   VCR: ViewContainerRef;
   modalFlag = false;
   child_unique_key: number = 0;
-  tempKey : number = null;
-  componentsReferences = Array<ComponentRef<ChildComponent>>()
+  tempKey: number = null;
+  componentsReferences = Array<ComponentRef<ChildComponent>>();
 
   constructor(private CFR: ComponentFactoryResolver) {}
 
@@ -36,18 +36,17 @@ export class ParentComponent {
     this.componentsReferences.push(childComponentRef);
   }
 
-  reflectedOutput(event){
-    console.log(event)
-        this.modalFlag = false;
+  reflectedOutput(event) {
+    console.log(event);
+    this.modalFlag = false;
 
-    if(event === 'delete'){
-      this.removeComp(this.tempKey)
+    if (event === "delete") {
+      this.removeComp(this.tempKey);
     }
-    
   }
 
-  removeComp(key){
-     if (this.VCR.length < 1) return;
+  removeComp(key) {
+    if (this.VCR.length < 1) return;
 
     let componentRef = this.componentsReferences.filter(
       x => x.instance.unique_key == key
@@ -63,11 +62,9 @@ export class ParentComponent {
       x => x.instance.unique_key !== key
     );
   }
-  
 
   remove(key: number) {
     this.modalFlag = true;
     this.tempKey = key;
   }
- 
 }
