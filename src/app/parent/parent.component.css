@@ -4,11 +4,22 @@
   display:flex;
   flex-wrap: wrap;
   border: 1px solid #dfe3e9;
-  width:90%;
+  width:calc(100%-24px);
   min-height:40vh;
   padding:24px;
   margin:24px;
   background-color:#f7f8fa;
   border-radius: 10px;
-    box-shadow: 0 16px 32px 0px rgba(0, 0, 0, 0.1), 0 0px 50px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 16px 32px 0px rgba(0, 0, 0, 0.1), 0 0px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.into-container{
+
+  width: calc(100%-24px);
+    /* min-height: 40vh; */
+    /* padding: 24px; */
+    margin: 24px;
+    /* border: 1px solid grey; */
+    display: flex;
+    justify-content: flex-end;
 }
