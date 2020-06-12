@@ -1,0 +1,7 @@
+<button type="button" (click)="createComponent()">
+    Add component
+</button>
+<app-delete [open]  = modalFlag (valueChange)="reflectedOutput($event)"></app-delete>
+<div class="parent-comp" >
+	<ng-template #viewContainerRef></ng-template>
+</div>

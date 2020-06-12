@@ -1,0 +1,36 @@
+.modal-container{
+
+
+}
+
+
+.flex-container{
+  display:flex;
+  justify-content: space-between;
+}
+
+.modal-overlay{
+  		position: fixed;
+		z-index: 9999999;
+		height: 100%;
+		padding: 0;
+		width: 100%;
+		top: 0;
+		left: 0;
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0.6);
+		border-radius: 3px;
+}
+
+.modal{
+	padding: 42px;
+	
+		z-index: 999999999;
+		background-color: #ffffff;
+		width:520px;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+	
+        border-radius: 10px; box-shadow: 0 16px 32px 0px rgba(0, 0, 0, 0.1), 0 0px 50px 0 rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,29 @@
+
+.child-comp-container{
+  padding:18px;
+  min-width:220px;
+}
+
+.child-comp-label{
+display:flex;
+justify-content:space-between;
+}
+
+.comp-name{
+font-size:14px;
+text-transform: capitalize;
+color:darkslategray;
+}
+
+.comp-label{
+}
+
+.comp-sub-container{
+  margin-top:18px;
+  border: 1px solid #dfe3e9;
+  border-radius:6px;
+  font-size:16px;
+  color:grey;
+  padding:14px 14px;
+  opacity:0.6;
+}
