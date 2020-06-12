@@ -14,6 +14,9 @@ font-size:14px;
 text-transform: capitalize;
 color:darkslategray;
 }
+.comp-del{
+  cursor:pointer;
+}
 
 
 .comp-sub-container{
